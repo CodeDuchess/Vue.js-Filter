@@ -8,11 +8,7 @@ class Post {
     this.img = img;
   }
 }
-<script>
-function myFunction() {
-  alert("Hello! I am an alert box!");
-}
-</script>
+
   const app =new Vue({
   el: '#app',
   data: {
