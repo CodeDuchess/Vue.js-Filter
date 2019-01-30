@@ -1,11 +1,6 @@
 'use-strict';
 
-function myFunction() {
-  alert("Where my code?");
-}
-
-
-/*class Post {
+class Post {
   constructor(title, link, author, img) {
     this.title = title;
     this.link = link;
@@ -89,6 +84,6 @@ function myFunction() {
     }
   }
 })
-*/
+
 
 
