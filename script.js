@@ -70,7 +70,7 @@ class Post {
         'https://cdn.worldvectorlogo.com/logos/feathersjs.svg'
       ),
 ]
-
+/*
   },
   computed: {
     filteredList() {
@@ -80,6 +80,6 @@ class Post {
     }
   }
 })
-
+*/
 
 
