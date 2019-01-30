@@ -1,4 +1,4 @@
-/*
+
 html, body {
   display: flex;
   align-items: center;
@@ -80,8 +80,6 @@ div#app {
     }
   }
 
-
-
   .hotpink {
     background: hotpink;
   }
@@ -96,4 +94,4 @@ div#app {
     border: 1px solid rgba(0,0,0,.12);
   }
 }
-*/
+
