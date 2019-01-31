@@ -1,4 +1,4 @@
-<script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>
+src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"
 
 import Vue from 'vue'; 
 window.Vue = Vue;
