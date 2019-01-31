@@ -1,7 +1,7 @@
+ <script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>
+
  import Vue from 'vue';
  window.Vue = Vue;
-
-<script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>
 
 class Post {
   constructor(title, link, author, img) {
