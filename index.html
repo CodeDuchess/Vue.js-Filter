@@ -8,10 +8,11 @@
   <body>
 	  <div class="container" id="people">
 	<div class="filter">
-		<label><input type="radio" v-model="selectedCategory" value="ALL" /> All</label>
-		<label><input type="radio" v-model="selectedCategory" value="Tech" /> Tech</label>
-		<label><input type="radio" v-model="selectedCategory" value="Entertainment" /> Entertainment</label>
-		<label><input type="radio" v-model="selectedCategory" value="Fictional" /> Fictional</label>
+		<label><input type="radio" v-model="selectedCategory" value="All" />All</label>
+		<label><input type="radio" v-model="selectedCategory" value="Tech" />Tech</label>
+		<label><input type="radio" v-model="selectedCategory" value="Marketing" />Marketing</label>
+		<label><input type="radio" v-model="selectedCategory" value="Accounting" />Accounting</label
+		<label><input type="radio" v-model="selectedCategory" value="Sales" />Sales</label>
 	</div>
 	
 	<ul class="people-list">
@@ -26,10 +27,10 @@
 	data: {
 		people: [
 			{ name: "Hardware Engineer", category: "Tech" },
-			{ name: "Network Administrator", category: "Tech" },
-			{ name: "Business Development Manager", category: "Sales" },
-			{ name: "Content Strategist", category: "Marketing" },
 			{ name: "Budget Analyst", category: "Accounting" },
+			{ name: "Content Strategist", category: "Marketing" },
+			{ name: "Business Development Manager", category: "Sales" },
+			{ name: "Network Administrator", category: "Tech" },
 			{ name: "Risk Analyst", category: "Accounting" },
 			{ name: "Social Media Specialist", category: "Marketing" },
 			{ name: "Territory Account Manager", category: "Sales" },
