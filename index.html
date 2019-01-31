@@ -8,7 +8,7 @@
   <body>
 	  <div class="container" id="people">
 	<div class="filter">
-		<label><input type="radio" v-model="selectedCategory" value="All" /> All</label>
+		<label><input type="radio" v-model="selectedCategory" value="ALL" /> All</label>
 		<label><input type="radio" v-model="selectedCategory" value="Tech" /> Tech</label>
 		<label><input type="radio" v-model="selectedCategory" value="Entertainment" /> Entertainment</label>
 		<label><input type="radio" v-model="selectedCategory" value="Fictional" /> Fictional</label>
@@ -25,15 +25,15 @@
 	el:  "#people",
 	data: {
 		people: [
-			{ name: "Bill Gates", category: "Tech" },
-			{ name: "Steve Jobs", category: "Tech" },
-			{ name: "Jeff Bezos", category: "Tech" },
-			{ name: "George Clooney", category: "Entertainment" },
-			{ name: "Meryl Streep", category: "Entertainment" },
-			{ name: "Amy Poehler", category: "Entertainment" },
-			{ name: "Lady of Lórien", category: "Fictional" },
-			{ name: "BB8", category: "Fictional" },
-			{ name: "Michael Scott", category: "Fictional" }
+			{ name: "Hardware Engineer", category: "Tech" },
+			{ name: "Network Administrator", category: "Tech" },
+			{ name: "Business Development Manager", category: "Sales" },
+			{ name: "Content Strategist", category: "Marketing" },
+			{ name: "Budget Analyst", category: "Accounting" },
+			{ name: "Risk Analyst", category: "Accounting" },
+			{ name: "Social Media Specialist", category: "Marketing" },
+			{ name: "Territory Account Manager", category: "Sales" },
+			{ name: "Scrum Master", category: "Tech" }
 		],
 		selectedCategory: "All"
 	},
