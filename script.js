@@ -1,6 +1,3 @@
-import Vue from 'Vue'
-import App from './App'
-
 class Post {
   constructor(title, link, author, img) {
     this.title = title;
