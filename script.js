@@ -1,6 +1,5 @@
 'use-strict';
 
-
 class Post {
   constructor(title, link, author, img) {
     this.title = title;
