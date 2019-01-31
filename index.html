@@ -6,7 +6,7 @@
   <title>Vue Filter Testing</title>
 </head>
   <body>
-	  <div class="container" id="people">
+	  <div class="container" id="jobs">
 	<div class="filter">
 		<label><input type="radio" v-model="selectedCategory" value="All" /> All</label>
 		<label><input type="radio" v-model="selectedCategory" value="Tech" /> Tech</label>
@@ -21,9 +21,9 @@
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>  
 <script>
     var vm = new Vue({
-	el:  "#people",
+	el:  "#jobs",
 	data: {
-		people: [
+		jobs: [
 			{ name: "Bill Gates", category: "Tech" },
 			{ name: "Steve Jobs", category: "Tech" },
 			{ name: "Jeff Bezos", category: "Tech" },
@@ -37,15 +37,15 @@
 		selectedCategory: "All"
 	},
 	computed: {
-		filteredPeople: function() {
+		filteredjobs: function() {
 			var vm = this;
 			var category = vm.selectedCategory;
 			
 			if(category === "All") {
-				return vm.people;
+				return vm.jobs;
 			} else {
-				return vm.people.filter(function(person) {
-					return person.category === category;
+				return vm.jobs.filter(function(job) {
+					return job.category === category;
 				});
 			}
 		}
