@@ -1,6 +1,3 @@
-
-window.Vue = Vue;
-
 class Post {
   constructor(title, link, author, img) {
     this.title = title;
