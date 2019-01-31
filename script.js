@@ -69,7 +69,7 @@ class Post {
         'Chuck',
         'https://cdn.worldvectorlogo.com/logos/feathersjs.svg'
       ),
-]
+];
 /*
   },
   computed: {
