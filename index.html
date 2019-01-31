@@ -6,7 +6,7 @@
   <title>Vue Filter Testing</title>
 </head>
   <body>
-	  <div class="container" id="jobs">
+	  <div class="container" id="people">
 	<div class="filter">
 		<label><input type="checkbox" v-model="selectedCategory" value="All" /> All</label>
 		<label><input type="checkbox" v-model="selectedCategory" value="Tech" /> Tech</label>
@@ -14,24 +14,17 @@
 		<label><input type="checkbox" v-model="selectedCategory" value="Fictional" /> Fictional</label>
 	</div>
 	
-	<ul class="jobs-list">
-		<li v-for="job in filteredJobs">{{ person.name }}</li>
+	<ul class="people-list">
+		<li v-for="person in filteredPeople">{{ person.name }}</li>
 	</ul>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>  
 <script>
-	var vm = new Vue({
-  data: {
-    // declare message with an empty value
-    jobs: ''
-  },
-  template: '<div>{{ jobs }}</div>'
-})
-
+	
     var vm = new Vue({
-	el:  "#jobs",
+	el:  "#people",
 	data: {
-		jobs: [
+		people: [
 			{ name: "Bill Gates", category: "Tech" },
 			{ name: "Steve Jobs", category: "Tech" },
 			{ name: "Jeff Bezos", category: "Tech" },
@@ -45,15 +38,15 @@
 		selectedCategory: "All"
 	},
 	computed: {
-		filteredjobs: function() {
+		filteredPeople: function() {
 			var vm = this;
 			var category = vm.selectedCategory;
 			
 			if(category === "All") {
-				return vm.jobs;
+				return vm.people;
 			} else {
-				return vm.jobs.filter(function(job) {
-					return job.category === category;
+				return vm.people.filter(function(person) {
+					return person.category === category;
 				});
 			}
 		}
