@@ -1,6 +1,5 @@
 'use-strict';
- import Vue from 'vue';
- window.Vue = Vue;
+
 
 class Post {
   constructor(title, link, author, img) {
