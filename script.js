@@ -19,8 +19,9 @@
 		],
 		selectedCategory: "All"
 	},
-	computed: {
-		filteredjobs: function() {
+
+    	computed: {
+		filteredJobs: function() {
 			var vm = this;
 			var category = vm.selectedCategory;
 			
@@ -34,4 +35,6 @@
 		}
 	}
 });
-</script>
+     </script>
+   </body>
+</html>
