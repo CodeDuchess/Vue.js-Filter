@@ -5,7 +5,7 @@
            message: ''
            },
         template: '<div>{{ message }}</div>'
-        })
+        }
 	data: {
        
 		jobs: [
