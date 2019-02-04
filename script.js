@@ -5,7 +5,7 @@
            message: ''
            },
         template: '<div>{{ message }}</div>'
-        }
+        })
 	data: {
        
 		jobs: [
@@ -20,7 +20,7 @@
 			{ name: "Scrum Master", category: "Tech" }
 		],
 		selectedCategory: "All"
-	}),
+	},
 
     	computed: {
 		filteredJobs: function() {
