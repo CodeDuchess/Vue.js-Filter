@@ -1,5 +1,4 @@
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>  
-<script>
 	
     var vm = new Vue({
 	el:  "#jobs",
