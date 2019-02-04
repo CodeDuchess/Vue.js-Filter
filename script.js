@@ -20,7 +20,7 @@
 			{ name: "Scrum Master", category: "Tech" }
 		],
 		selectedCategory: "All"
-	},
+	}),
 
     	computed: {
 		filteredJobs: function() {
