@@ -3,12 +3,13 @@
 	
     var vm = new Vue({
 	el:  "#jobs",
-	data: {
-        // declare message with an empty value
+	     // declare message with an empty value
            message: ''
            },
         template: '<div>{{ message }}</div>'
-        })
+        }
+	data: {
+       
 		jobs: [
 			{ name: "Hardware Engineer", category: "Tech" },
 			{ name: "Budget Analyst", category: "Accounting" },
