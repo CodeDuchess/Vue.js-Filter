@@ -4,8 +4,8 @@
 	     // declare message with an empty value
            message: ''
            },
-        template: '<div>{{ message }}</div>')
-        }
+        template: '<div>{{ message }}</div>'
+        })
 	data: {
        
 		jobs: [
