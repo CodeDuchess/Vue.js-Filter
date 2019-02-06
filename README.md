@@ -1,2 +1,2 @@
 
-Alternate Vue.js code for filtering JSON job lisitng data.
+Alternate Vue.js code for filtering JSON job listing data.
