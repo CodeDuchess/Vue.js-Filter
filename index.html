@@ -1,25 +1,20 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <script type="text/javascript" src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <title>Vue Filter Testing</title>
-</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.min.js" integrity="sha256-Gs0UYwrz/B58FsQggzU+vvCSyG/pewemP4Lssjzv8Ho=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.3.4/vue-resource.min.js" integrity="sha256-OZ+Xidb5+lV/saUzcfonHJQ3koQncPy0hLjT8dROdOU=" crossorigin="anonymous"></script>
 
-  <body>
-	  <div class="container" id="jobs">
-	<div class="filter">
-		<label><input type="radio" v-model="selectedCategory" value="All" />All</label>
-		<label><input type="radio" v-model="selectedCategory" value="Tech" />Tech</label>
-		<label><input type="radio" v-model="selectedCategory" value="Marketing" />Marketing</label>
-		<label><input type="radio" v-model="selectedCategory" value="Accounting" />Accounting</label
-		<label><input type="radio" v-model="selectedCategory" value="Sales" />Sales</label>
-	</div>
-	
-	<ul class="jobs-list">
-		<li v-for="job in filteredJobs">{{job.name }}</li>
-	</ul>
+<div id="app">
+  <h2>Fetched data from jsonplaceholder</h2>
+  Search by title: <input type="text" v-model="search"> <br><br>
+  
+  <lable>sunt</lable><input type="checkbox" value="sunt" v-on:change="filter">
+  <lable>esse</lable><input type="checkbox" value="esse" v-on:change="filter">
+  
+  <span v-if="filterText">Filtered with <b>{{ filterText }}</b></span>
+  
+  <ul>
+    <li v-for="apiRequest in filteredBlogs">
+      <h4>{{ apiRequest.title }}</h4>
+      <p>{{ apiRequest.body }}</p>
+    </li>
+  </ul>
 </div>
+
