@@ -1,5 +1,7 @@
 'use strict';
 
+var apiData= "";
+
 Vue.component('job-card', {
     props: ['job'],
     template: '<div class="card"><h1>{{ job.title }}</h1><p>{{ this.jobDescription }}</p><p><small>{{ job.type }}</small></p></div>',
