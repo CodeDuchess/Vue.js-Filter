@@ -20,7 +20,6 @@ Vue.component('job-card', {
           apiData:[],
           search: '',
           filterType: [],
-          
           selectedType:"Full Time"
         }
     },
