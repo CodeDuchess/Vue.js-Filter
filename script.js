@@ -41,7 +41,7 @@ Vue.component('job-card', {
 
     methods: { 
         getJobData: function() {
-            let url = 'https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?&markdown=true&page=1';
+            let url = 'https://cors-anywhere.herokuapp.com/https://jobs.githb.com/positions.json?&markdown=true&location=united+states&page=1&count=20';
             fetch ( url,{
                 'headers': {
                   'Content-Type': 'application/json'
