@@ -34,9 +34,9 @@ Vue.component('job-card', {
 				return vm.apiData.filter(function(job) {
 					return job.type == type;
 				});
-            }
-		}
-    },
+           		 }
+		    }
+    		},
 
     methods: { 
         getJobData: function() {
@@ -52,17 +52,17 @@ Vue.component('job-card', {
               })
               .then((rJson) => {
                   this.apiData = rJson;
-              })
-        }
-    },
+              		})
+       		 }
+    	   },
 
     mounted: function() {
         this.$nextTick(function() {
             this.getJobData();
-        });
-    }
+       		 });
+   	   }
 
-
-});
+	});
+  
   
 
