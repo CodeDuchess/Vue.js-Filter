@@ -7,9 +7,9 @@
   <!-- VUE.JS CDN -->
    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>  
 
-  <title>Github Jobs API</title>
+  	<title>Github Jobs API</title>
 
- <a href="http://href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet""></a>
+ 	<a href="http://href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet""></a>
   
   </head>
 
@@ -20,16 +20,16 @@
 	<div class="filter">
 		<label><input type="radio" v-model="selectedType" value="Full Time"/>Full Time</label>
 		<label><input type="radio" v-model="selectedType" value="Part Time"/>Part Time</label>
-    <label><input type="radio" v-model="selectedType" value="Contract"/>Contract</label>
+   		<label><input type="radio" v-model="selectedType" value="Contract"/>Contract</label>
 		
-	</div>
+     </div>
 	
 	<ul class="job-list">
-		<li v-for="job in filteredJobs">
-      <job-card v-bind:job="job"></job-card>
-    </li>
+	    <li v-for="job in filteredJobs">
+              <job-card v-bind:job="job"></job-card>
+            </li>
 	</ul>
-</div>
+     </div>
 
    <!-- DIV FOR CARD DISPLAY -->
      <div id="root"></div>
